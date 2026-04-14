@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Josefin_Sans, Zen_Old_Mincho } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const josefinSans = Josefin_Sans({
@@ -21,9 +22,12 @@ export const metadata: Metadata = {
     template: "%s | Common."
   },
   description: "「普通」の中に潜む美しさを定義する。一過性の流行ではなく、普遍的な美学を追求するクリエイティブスタジオ。Web制作、ブランディング、アートディレクションを通じて、ブランドの本質を形にします。",
-  keywords: ["Design Studio", "Branding", "Web Production", "Art Direction", "Minimalism", "Portfolio"],
+  keywords: ["Common.", "コモン", "デザインスタジオ", "ブランディング", "Web制作", "アートディレクション", "ミニマリズム", "ポートフォリオ", "北郷 将"],
   icons: {
     icon: '/favicon.ico?v=2',
+  },
+  verification: {
+    google: 'YJXNCRyyaNWRHupGBf2FzQQ0Ypy-KJXcm15cob4gN7M',
   },
   openGraph: {
     type: 'website',
@@ -61,6 +65,21 @@ export default function RootLayout({
       lang="ja"
       className={`${josefinSans.variable} ${zenOldMincho.variable} h-full antialiased`}
     >
+      <head>
+        {/* Google Analytics (GA4) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-CTSK5M1NEW`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CTSK5M1NEW');
+          `}
+        </Script>
+      </head>
       <body className="min-h-full flex flex-col bg-[#e0e0e0]">
         <script
           suppressHydrationWarning
