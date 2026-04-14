@@ -14,7 +14,16 @@ export default function Footer() {
         </div>
 
         {/* Right Side: Links & SNS */}
-        <div className="flex flex-wrap gap-16">
+        <div className="flex flex-wrap gap-16 md:gap-32">
+          {/* Location Block */}
+          <div className="space-y-4">
+            <span className="text-[8px] tracking-[0.4em] text-zinc-400 uppercase font-ultra-light block mb-6">STUDIO</span>
+            <div className="space-y-2">
+              <p className="text-[10px] tracking-widest text-secondary font-ultra-light uppercase font-english">Nagareyama, Chiba, Japan</p>
+              <p className="text-[9px] tracking-[0.2em] text-zinc-400 font-ultra-light font-japanese">千葉県流山市</p>
+            </div>
+          </div>
+
           <div className="space-y-4">
             <span className="text-[8px] tracking-[0.4em] text-zinc-400 uppercase font-ultra-light block mb-6">FOLLOW</span>
             <div className="flex gap-10">
