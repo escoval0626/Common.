@@ -15,7 +15,7 @@ const zenOldMincho = Zen_Old_Mincho({
 });
 
 export const metadata: Metadata = {
-  title: "Common. | A Digital Curator",
+  title: "Common. | Studio",
   description: "日常の質感と、静寂の重みを愛する人々のためのデジタルスタジオ。",
 };
 

@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="text-3xl font-light tracking-tighter-extra lowercase text-primary">
             common.
           </div>
-          <p className="text-[10px] tracking-[0.3em] uppercase leading-relaxed text-secondary font-ultra-light">
+          <p className="text-[10px] tracking-[0.3em] uppercase leading-relaxed text-secondary font-ultra-light whitespace-pre-wrap md:whitespace-nowrap">
             目に見えるものだけでなく、その背後にある気配を形に。
           </p>
         </div>
