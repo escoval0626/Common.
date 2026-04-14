@@ -21,20 +21,20 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-[#e0e0e0]">
-      {/* Background Layer 1: The Video */}
-      <div className="absolute inset-0 z-0">
+      {/* Background Layer 1: The Video (will-changeでGPU加速を提示) */}
+      <div className="absolute inset-0 z-0" style={{ opacity: 0.6, willChange: 'transform' }}>
         <video
           src="/videos/hero_bg.mp4"
           autoPlay
           muted
           loop
           playsInline
-          className="h-full w-full object-cover opacity-60"
+          className="h-full w-full object-cover"
         />
       </div>
 
-      {/* Background Layer 2: The 3D Abstract Visual */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
+      {/* Background Layer 2: The 3D Abstract Visual (描画を安定化) */}
+      <div className="absolute inset-0 z-10 pointer-events-none" style={{ transform: 'translateZ(0)' }}>
         <Scene />
       </div>
 

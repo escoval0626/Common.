@@ -40,35 +40,28 @@ const workItems = [
 
 const ProjectItem = ({ work, idx }: { work: typeof workItems[0], idx: number }) => {
   const containerRef = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  })
-
-  // パララックスの移動量設定 (-30pxから30pxへ。エディトリアルな静寂さを保つため控えめに)
-  const y = useTransform(scrollYProgress, [0, 1], [-30, 30])
-
+  
   return (
     <motion.div 
       ref={containerRef}
-      initial={{ opacity: 0, y: 60 }}
+      initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ delay: idx * 0.1, duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ delay: idx * 0.1, duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
       className="flex flex-col group"
     >
-      {/* Image Slot */}
+      {/* Image Slot - Clear Reveal Animation (Scale 1.0) */}
       <div className="relative md:h-[500px] flex flex-col justify-center mb-10 overflow-hidden">
         <div 
           className={`w-full aspect-[3/4] bg-zinc-50 overflow-hidden shadow-sm border border-zinc-100 transition-transform duration-700 ${idx % 2 === 1 ? 'md:translate-y-8' : 'md:-translate-y-8'}`}
         >
           <motion.img 
-            style={{ y, scale: 1.1 }} // 少し拡大して余白を作り、その中でタイルを動かす
-            initial={{ scale: 1.1 }}
-            whileHover={{ scale: 1.15 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ scale: 1.0, opacity: 0.8 }}
+            whileInView={{ opacity: 1 }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             src={work.image} 
-            className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-1000" 
+            className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-1000" 
             alt={work.title} 
           />
         </div>

@@ -3,17 +3,17 @@
 import * as motion from 'framer-motion/client'
 
 const carouselImages = [
-  '/images/separate/4.png',
-  '/images/separate/11.png',
-  '/images/separate/1.png',
-  '/images/separate/8.png',
-  '/images/separate/5.png',
-  '/images/separate/9.png',
-  '/images/separate/2.png',
-  '/images/separate/7.png',
-  '/images/separate/10.png',
-  '/images/separate/6.png',
-  '/images/separate/3.png',
+  '/images/separate/4.webp',
+  '/images/separate/11.webp',
+  '/images/separate/1.webp',
+  '/images/separate/8.webp',
+  '/images/separate/5.webp',
+  '/images/separate/9.webp',
+  '/images/separate/2.webp',
+  '/images/separate/7.webp',
+  '/images/separate/10.webp',
+  '/images/separate/6.webp',
+  '/images/separate/3.webp',
 ]
 
 // Duplicate images for seamless looping
@@ -22,8 +22,8 @@ const doubledImages = [...carouselImages, ...carouselImages]
 export default function Separate() {
   return (
     <section className="relative w-full bg-surface-container-low overflow-hidden">
-      {/* Top Part: Infinite Marquee Carousel */}
-      <div className="relative w-full h-[30vh] md:h-[45vh] flex items-center overflow-hidden border-b border-outline-variant">
+      {/* Top Part: Infinite Marquee Carousel (Height reduced to 30vh) */}
+      <div className="relative w-full h-[25vh] md:h-[30vh] flex items-center overflow-hidden border-b border-outline-variant">
         <motion.div 
           className="flex gap-2 h-full"
           animate={{ x: ["0%", "-50%"] }}
