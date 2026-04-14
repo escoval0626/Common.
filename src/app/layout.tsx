@@ -15,10 +15,37 @@ const zenOldMincho = Zen_Old_Mincho({
 });
 
 export const metadata: Metadata = {
-  title: "Common. | Studio",
-  description: "日常の質感と、静寂の重みを愛する人々のためのデジタルスタジオ。",
+  metadataBase: new URL('https://common-ordinarydays.com/'),
+  title: {
+    default: "Common. | Studio",
+    template: "%s | Common."
+  },
+  description: "「普通」の中に潜む美しさを定義する。一過性の流行ではなく、普遍的な美学を追求するクリエイティブスタジオ。Web制作、ブランディング、アートディレクションを通じて、ブランドの本質を形にします。",
+  keywords: ["Design Studio", "Branding", "Web Production", "Art Direction", "Minimalism", "Portfolio"],
   icons: {
     icon: '/favicon.ico?v=2',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'ja_JP',
+    url: 'https://common-ordinarydays.com/',
+    siteName: 'Common.',
+    title: 'Common. | Studio',
+    description: '「普通」の中に潜む美しさを定義する。一過性の流行ではなく、普遍的な美学を追求するクリエイティブスタジオ。',
+    images: [
+      {
+        url: '/ogp-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Common. Studio - Beyond Minimalism',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Common. | Studio',
+    description: '「普通」の中に潜む美しさを定義するクリエイティブスタジオ。',
+    images: ['/ogp-image.png'],
   },
 };
 
