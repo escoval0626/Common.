@@ -12,7 +12,7 @@ export default function Hero() {
       y: 0,
       transition: {
         duration: 1.2,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.22, 1, 0.36, 1] as any,
         delay: 0.8 + i * 0.05
       }
     })
