@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* 設定いただいたフォント変数の定義 */
+  --font-josefin: var(--font-josefin);
+  --font-zen: var(--font-zen);
+
+  /* マスター画像に基づくトーン＆マナーの設定 */
+  --color-surface: #f7f7f7;
+  --color-surface-container: #ffffff;
+  --color-surface-container-low: #f9f9f9;
+  --color-on-surface: #1e1e1e;
+  --color-primary: #000000;
+  --color-primary-dim: #333333;
+  --color-secondary: #555555;
+  --color-outline: #d1d1d1;
+  --color-outline-variant: #e5e5e5;
+  
+  --tracking-widest-extra: 0.4em;
+  --tracking-tighter-extra: -0.06em;
+  --tracking-widest-logo: 0.05em;
+}
+
+.dot-grid {
+  background-image: radial-gradient(#d1d1d1 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  /* 日本語を基本としつつ、英数字に Josefin Sans を優先適用 */
+  font-family: var(--font-josefin), var(--font-zen), serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 各セクションで使い分けるためのユーティリティ */
+.font-english {
+  font-family: var(--font-josefin), sans-serif;
+}
+
+.font-japanese {
+  font-family: var(--font-zen), serif;
+}
+
+.text-ultra-light {
+  font-weight: 100 !important;
+}
+
+.text-10px {
+  font-size: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
