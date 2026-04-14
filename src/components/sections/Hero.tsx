@@ -86,12 +86,13 @@ export default function Hero() {
         </motion.div>
 
         {/* CTA Button (Removed Magnetic) */}
-        <motion.button
+        <motion.a
+          href="#選定作品"
           whileHover={{ scale: 1.05 }}
-          className="mt-16 pointer-events-auto bg-primary px-10 py-5 text-[11px] tracking-[0.4em] text-surface font-light transition-all duration-500 hover:bg-primary-dim hover:px-14 uppercase font-english"
+          className="mt-16 pointer-events-auto bg-primary px-10 py-5 text-[11px] tracking-[0.4em] text-surface font-light transition-all duration-500 hover:bg-primary-dim hover:px-14 uppercase font-english inline-block"
         >
           VIEW ALL PROJECTS
-        </motion.button>
+        </motion.a>
       </div>
 
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-20 pointer-events-none">
