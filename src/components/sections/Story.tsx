@@ -4,18 +4,21 @@ import * as motion from 'framer-motion/client'
 
 export default function Story() {
   return (
-    <section className="relative w-full bg-surface py-32 px-6 md:py-60 md:px-32 flex flex-col items-center overflow-hidden">
+    <section id="私たちの想い" className="relative w-full bg-surface py-32 px-6 md:py-60 md:px-32 flex flex-col items-center overflow-hidden">
       <div className="max-w-4xl w-full">
-        {/* Subtitle */}
-        <motion.span 
-          initial={{ opacity: 0, y: 10 }}
+        {/* Section Header */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="text-[10px] tracking-[0.4em] text-zinc-400 uppercase font-ultra-light block mb-12 text-center"
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col items-center mb-20 md:mb-32 text-center"
         >
-          Our Story & Philosophy
-        </motion.span>
+          <h2 className="text-3xl md:text-6xl font-light text-primary tracking-tighter-extra mb-6 font-english capitalize">
+            Story.
+          </h2>
+          <div className="w-12 h-[1px] bg-outline" />
+        </motion.div>
 
         {/* Main Philosophy Text */}
         <div className="space-y-12 md:space-y-20">
@@ -57,7 +60,7 @@ export default function Story() {
           className="mt-24 md:mt-32 flex justify-center"
         >
           <a 
-            href="#contact" 
+            href="#お問い合わせ" 
             className="group relative inline-flex flex-col items-center"
           >
             <span className="text-[10px] tracking-[0.4em] text-primary uppercase font-ultra-light mb-4 group-hover:text-zinc-500 transition-colors duration-500">

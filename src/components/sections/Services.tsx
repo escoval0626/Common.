@@ -160,7 +160,7 @@ export default function Services() {
               あなたの価値を、本質的な形へ。
             </h4>
             <a 
-              href="#contact" 
+              href="#お問い合わせ" 
               className="group relative inline-flex flex-col items-center"
             >
               <span className="text-[10px] tracking-[0.4em] text-primary uppercase font-ultra-light mb-4 group-hover:text-zinc-500 transition-colors duration-500">

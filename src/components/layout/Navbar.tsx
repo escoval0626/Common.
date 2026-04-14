@@ -9,6 +9,7 @@ export default function Navbar() {
 
   const navItems = [
     { label: 'About', href: '#私たちの哲学' },
+    { label: 'Story', href: '#私たちの想い' },
     { label: 'Services', href: '#事業内容' },
     { label: 'Works', href: '#選定作品' },
     { label: 'Contact', href: '#お問い合わせ' }
