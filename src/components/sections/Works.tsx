@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import * as motion from 'framer-motion/client'
 import { useScroll, useTransform } from 'framer-motion'
 
-const MotionImage = motion(Image)
+
 
 const workItems = [
   {
@@ -55,21 +55,19 @@ const ProjectItem = ({ work, idx }: { work: typeof workItems[0], idx: number }) 
     >
       {/* Image Slot - Clear Reveal Animation (Scale 1.0) */}
       <div className="relative md:h-[500px] flex flex-col justify-center mb-10 overflow-hidden">
-        <div 
+        <motion.div 
           className={`w-full aspect-[3/4] bg-zinc-50 overflow-hidden shadow-sm border border-zinc-100 transition-transform duration-700 ${idx % 2 === 1 ? 'md:translate-y-8' : 'md:-translate-y-8'}`}
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }}
         >
-          <MotionImage 
-            initial={{ scale: 1.0, opacity: 0.8 }}
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }}
+          <Image 
             src={work.image} 
             alt={work.title}
             width={800}
             height={1067}
             className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-300"
           />
-        </div>
+        </motion.div>
       </div>
 
       {/* Text Information */}

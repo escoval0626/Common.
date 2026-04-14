@@ -35,10 +35,11 @@ export default function RootLayout({
       className={`${josefinSans.variable} ${zenOldMincho.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#e0e0e0]">
-        <script 
-          dangerouslySetInnerHTML={{ 
-            __html: `history.scrollRestoration = "manual";` 
-          }} 
+        <script
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: `history.scrollRestoration = "manual";`
+          }}
         />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
