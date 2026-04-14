@@ -7,9 +7,10 @@ export default function Hero() {
   const title = "Common."
   
   const titleVariants = {
-    hidden: { y: 120 },
+    hidden: { y: "100%", opacity: 0 },
     visible: (i: number) => ({
       y: 0,
+      opacity: 1,
       transition: {
         duration: 1.2,
         ease: [0.22, 1, 0.36, 1] as any,
@@ -49,7 +50,7 @@ export default function Hero() {
         </motion.span>
         
         {/* Split-Text Title (80% Scale + Tighter Tracking) */}
-        <h1 className="text-[2.4rem] sm:text-[3.6rem] md:text-[7.6rem] font-light tracking-[0.04em] leading-none text-primary mb-6 font-english flex overflow-hidden py-4">
+        <h1 className="text-[2.4rem] sm:text-[3.6rem] md:text-[7.6rem] font-light tracking-[0.04em] leading-none text-primary mb-6 font-english flex overflow-hidden">
           {title.split("").map((char, i) => (
             <motion.span
               key={i}
