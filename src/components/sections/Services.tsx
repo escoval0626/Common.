@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import * as motion from 'framer-motion/client'
 
 export default function Services() {
@@ -145,6 +146,30 @@ export default function Services() {
           ))}
         </motion.div>
 
+        {/* Strategic Mid-Page CTA - Minimal and Professional */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, duration: 1 }}
+          className="mt-32 md:mt-48 flex flex-col items-center space-y-12"
+        >
+          <div className="w-px h-24 bg-outline-variant/30" />
+          <div className="text-center space-y-8 px-6">
+            <h4 className="text-xl md:text-2xl font-light text-primary tracking-widest font-japanese">
+              あなたの価値を、本質的な形へ。
+            </h4>
+            <a 
+              href="#contact" 
+              className="group relative inline-flex flex-col items-center"
+            >
+              <span className="text-[10px] tracking-[0.4em] text-primary uppercase font-ultra-light mb-4 group-hover:text-zinc-500 transition-colors duration-500">
+                Inquiry for your project.
+              </span>
+              <div className="w-16 h-[1px] bg-primary group-hover:w-24 transition-all duration-700" />
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   )

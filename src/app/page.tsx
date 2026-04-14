@@ -1,6 +1,6 @@
-import Navbar from '@/components/layout/Navbar'
 import Hero from '@/components/sections/Hero'
 import About from '@/components/sections/About'
+import Story from '@/components/sections/Story'
 import Separate from '@/components/sections/Separate'
 import Services from '@/components/sections/Services'
 import Poetry from '@/components/sections/Poetry'
@@ -18,6 +18,9 @@ export default function Home() {
         
         {/* ② About (Philosophy) */}
         <About />
+
+        {/* New: Story (Humanity & Storytelling) */}
+        <Story />
         
         {/* ③ Bridge / Process (3-row images + Flow) */}
         <Separate />

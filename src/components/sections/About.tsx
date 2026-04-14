@@ -1,8 +1,9 @@
+import Image from 'next/image'
 import * as motion from 'framer-motion/client'
 
 export default function About() {
   return (
-    <section id="私たちの哲学" className="relative min-h-screen w-full bg-surface-container py-32 px-6 md:py-48 md:px-32 font-japanese">
+    <section id="私たちの哲学" className="relative min-h-screen w-full bg-surface-container py-32 px-6 md:py-48 md:px-32 font-japanese overflow-hidden">
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +61,8 @@ export default function About() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.6 + (i * 0.2), duration: 1 }}
                 >
-                  <h3 className="text-sm font-medium tracking-[0.2em] uppercase mb-4 text-primary font-english">{item.title}</h3>
+                  {/* labels: text-[9px] -> text-[11px] (Mobile Focus) */}
+                  <h3 className="text-[11px] md:text-sm font-medium tracking-[0.2em] uppercase mb-4 text-primary font-english">{item.title}</h3>
                   <p className="text-sm font-light leading-relaxed text-secondary tracking-widest">
                     {item.desc}
                   </p>
@@ -70,7 +72,7 @@ export default function About() {
           </div>
         </div>
         
-        {/* Right Side: High Quality Image */}
+        {/* Right Side: High Quality Image (next/image migrated) */}
         <motion.div 
           initial={{ opacity: 0, scale: 1.05 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -79,10 +81,13 @@ export default function About() {
           className="w-full md:w-1/2 flex justify-end items-start md:sticky md:top-32"
         >
           <div className="relative w-full max-w-md bg-zinc-100 aspect-[3/4] overflow-hidden shadow-2xl">
-             <motion.img 
+             <Image 
                src="/images/about/main.png" 
                alt="Vase with dandelion seeds" 
+               width={800}
+               height={1067}
                className="w-full h-full object-cover scale-110"
+               priority // Aboutセクションの上部画像なので優先読み込み
              />
           </div>
         </motion.div>
