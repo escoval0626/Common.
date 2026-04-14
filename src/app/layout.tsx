@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Common. | Studio",
   description: "日常の質感と、静寂の重みを愛する人々のためのデジタルスタジオ。",
   icons: {
-    icon: '/icon.png',
+    icon: '/favicon.ico?v=2',
   },
 };
 
