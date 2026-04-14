@@ -29,7 +29,7 @@ const workItems = [
     title: "Tokowa Botanical Atelier",
     image: "/images/works/1.png",
     intro: "ボタニカルショップのブランディング。光と影を見つめる視点を、ロゴデザインへと昇華。",
-    concept: "建築的な幾何学性と、有機的な空気感の対比。レンズ越しの誠実な視点を抽出し、ブランドの本質をシンボルへ凝縮。",
+    concept: "植物の有機的な美しさと、端正な造形美の調和。写真家の視点で光と影を読み解き、ブランドの核をシンボルへ凝縮。",
   },
   {
     category: "04 / ONLINE STORE",
