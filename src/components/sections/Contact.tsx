@@ -14,9 +14,8 @@ export default function Contact() {
     const data = new FormData(form)
 
     try {
-      // NOTE: 本番公開時に Formspree 等のキーが決まれば、以下のURLを差し替えてください。
-      // 現在はシミュレーションとして、送信成功の状態へ移行させます。
-      const response = await fetch('https://formspree.io/f/mqaegeoo', {
+      // 本番用の Formspree エンドポイントに更新完了
+      const response = await fetch('https://formspree.io/f/xbdqlrak', {
         method: 'POST',
         body: data,
         headers: {
