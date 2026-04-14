@@ -59,9 +59,9 @@ const ProjectItem = ({ work, idx }: { work: typeof workItems[0], idx: number }) 
             initial={{ scale: 1.0, opacity: 0.8 }}
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.05 }}
-            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }} // ホバーの時間を0.4秒に大幅短縮し、挙動を「キレよく」改善
             src={work.image} 
-            className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-1000" 
+            className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-300" // フィルターのラグもホバーに合わせる
             alt={work.title} 
           />
         </div>

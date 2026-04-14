@@ -25,7 +25,7 @@ export default function Separate() {
       {/* Top Part: Infinite Marquee Carousel (Height reduced to 30vh) */}
       <div className="relative w-full h-[25vh] md:h-[30vh] flex items-center overflow-hidden border-b border-outline-variant">
         <motion.div 
-          className="flex gap-2 h-full"
+          className="flex gap-4 md:gap-8 h-full items-center" // 高速ループ中でも写真が埋没しないようgapを調整
           animate={{ x: ["0%", "-50%"] }}
           transition={{ 
             ease: "linear", 
@@ -34,10 +34,10 @@ export default function Separate() {
           }}
         >
           {doubledImages.map((src, i) => (
-            <div key={i} className="relative h-full aspect-[16/9] flex-shrink-0">
+            <div key={i} className="relative h-[80%] aspect-[16/9] flex-shrink-0"> {/* 写真自体を80%に縮小 */}
               <img 
                 src={src} 
-                className="w-full h-full object-cover" 
+                className="w-full h-full object-cover shadow-sm" 
                 alt={`Detail ${i}`} 
               />
             </div>
