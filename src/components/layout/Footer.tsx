@@ -20,7 +20,7 @@ export default function Footer() {
             <span className="text-[11px] tracking-[0.4em] text-zinc-400 uppercase font-ultra-light block mb-6">STUDIO</span>
             <div className="space-y-2">
               <p className="text-[11px] tracking-widest text-secondary font-ultra-light uppercase font-english">Nagareyama, Chiba, Japan</p>
-              <p className="text-[10px] tracking-[0.2em] text-zinc-400 font-ultra-light font-japanese">千葉県流山市</p>
+              <p className="text-[10px] tracking-[0.2em] text-zinc-400 font-ultra-light font-japanese">千葉県流山市 | ホームページ制作</p>
             </div>
           </div>
 

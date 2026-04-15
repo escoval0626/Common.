@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     default: "Common. | Studio",
     template: "%s | Common."
   },
-  description: "「普通」の中に潜む美しさを定義する。一過性の流行ではなく、普遍的な美学を追求するクリエイティブスタジオ。Web制作、ブランディング、アートディレクションを通じて、ブランドの本質を形にします。",
-  keywords: ["Common.", "コモン", "デザインスタジオ", "ブランディング", "Web制作", "アートディレクション", "ミニマリズム", "ポートフォリオ", "北郷 将"],
+  description: "千葉県流山市を拠点に、ホームページ制作、ブランディング、アートディレクションを行うクリエイティブスタジオ。一過性の流行ではなく、普遍的な美学を追求し、ブランドの本質を形にします。",
+  keywords: ["Common.", "コモン", "流山市", "千葉県", "ホームページ制作", "Web制作", "デザインスタジオ", "ブランディング", "アートディレクション", "制作会社"],
   icons: {
     icon: '/favicon.ico?v=2',
   },
@@ -78,6 +78,32 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-CTSK5M1NEW');
           `}
+        </Script>
+        {/* Local Business Structured Data */}
+        <Script id="local-business-data" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Common.",
+            "image": "https://common-ordinarydays.com/ogp-image.png",
+            "@id": "https://common-ordinarydays.com",
+            "url": "https://common-ordinarydays.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Nagareyama",
+              "addressRegion": "Chiba",
+              "addressCountry": "JP"
+            },
+            "description": "千葉県流山市を拠点に、ホームページ制作、ブランディング、アートディレクションを行うクリエイティブスタジオ。",
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+              ],
+              "opens": "10:00",
+              "closes": "19:00"
+            }
+          })}
         </Script>
       </head>
       <body className="min-h-full flex flex-col bg-[#e0e0e0]">
