@@ -17,14 +17,14 @@ const FlowRibbon = ({ index }: { index: number }) => {
   return (
     <mesh ref={mesh} position={[0, (index - 2) * 1.8, -2]} rotation={[Math.PI / 2.5, 0, 0]}>
       {/* 32x128分割に削減し、パフォーマンスを劇的に改善 (旧: 64x1024) */}
-      <torusGeometry args={[4, 0.004, 32, 128]} />
+      <torusGeometry args={[4, 0.003, 32, 128]} />
       <MeshWobbleMaterial 
         color="#000000" 
-        emissive="#333333" 
-        emissiveIntensity={2} 
+        emissive="#222222" 
+        emissiveIntensity={0.2} 
         speed={1} 
         factor={1.5} 
-        roughness={0.1} 
+        roughness={0.5} 
         opacity={1} 
       />
     </mesh>
