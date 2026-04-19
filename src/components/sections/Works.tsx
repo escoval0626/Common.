@@ -12,14 +12,16 @@ const workItems = [
     category: "01 / RECRUIT LP",
     title: "FTS Recruiting Site",
     image: "/images/works/2.png",
+    alt: "千葉県流山市の採用サイト制作実績：墨出し専門企業 FTS | Common. Studio",
     intro: "墨出し専門企業「FTS」の採用サイト。最新の技術と前衛的なビジュアルを融合し、職人魂を視覚化。",
-    concept: "伝統技術の継承と最先端の動的表現。一見相反する要素を緻密に融合し、独自のブランドアイデンティティを再構成。",
+    concept: "伝統技術の継承と最先端の動的表現。一見相反する要素を緻密に融合し、独自のブランドアイデンティティを再構築。",
     url: "https://fts-jp-recruit.com/"
   },
   {
     category: "02 / PORTFOLIO",
     title: "Common By Sho Kitago",
     image: "/images/works/3.png",
+    alt: "フォトグラファー北郷将 ポートフォリオサイト制作実績 | Common. Studio",
     intro: "フォトグラファー・北郷将の作品集。広告的手法をUIに導入。写真が持つ訴求力を最大化。",
     concept: "広告的視点による緻密なタイポグラフィ配置。余白そのものをデザインすることで、写真に宿る静寂の物語を可視化。",
     url: "https://commonbyshokitago.com/"
@@ -28,6 +30,7 @@ const workItems = [
     category: "03 / BRANDING",
     title: "Tokowa Botanical Atelier",
     image: "/images/works/1.png",
+    alt: "ボタニカルショップのブランディング・ロゴデザイン制作事例：Tokowa | Common. Studio",
     intro: "ボタニカルショップのブランディング。光と影を見つめる視点を、ロゴデザインへと昇華。",
     concept: "植物の有機的な美しさと、端正な造形美の調和。写真家の視点で光と影を読み解き、ブランドの核をシンボルへ凝縮。",
   },
@@ -35,6 +38,7 @@ const workItems = [
     category: "04 / ONLINE STORE",
     title: "Calm Coffee",
     image: "/images/works/4.png",
+    alt: "千葉県流山おおたかの森のカフェ Calm Coffee ECサイト制作実績 | Common. Studio",
     intro: "流山おおたかの森の閑静な店舗。静寂と余白を再構成し、ECにおける情緒的な購入体験をデザイン。",
     concept: "実店舗の陰影を捉えた非対称な空間設計。デジタル独自の循環する購買フローを構築し、情緒的な購入体験を完成。",
     url: "https://calm-coffe.vercel.app/"
@@ -62,7 +66,7 @@ const ProjectItem = ({ work, idx }: { work: typeof workItems[0], idx: number }) 
         >
           <Image 
             src={work.image} 
-            alt={work.title}
+            alt={work.alt}
             width={800}
             height={1067}
             className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-300"

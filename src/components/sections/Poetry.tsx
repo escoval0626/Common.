@@ -14,7 +14,10 @@ export default function Poetry() {
       >
         <div className="space-y-6">
           <p className="text-xl md:text-3xl font-light leading-relaxed text-primary tracking-widest-extra font-japanese italic">
-            デザインとは、何を付け加えるかではなく、<br />何を取り除くかにある。
+            <span className="inline-block">デザインとは、</span>
+            <span className="inline-block">何を付け加えるかではなく、</span>
+            <br className="md:hidden" />
+            <span className="inline-block">何を取り除くかにある。</span>
           </p>
 
           <div className="w-12 h-[1px] bg-outline mx-auto" />

@@ -36,11 +36,14 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="pt-8 md:pt-0">
+        {/* Copyright & Policy */}
+        <div className="pt-8 md:pt-0 flex flex-col items-start md:items-end gap-2">
           <p className="text-[11px] tracking-widest uppercase text-zinc-400 font-ultra-light">
             © 2026 common. all rights reserved.
           </p>
+          <a href="#privacy-policy" className="text-[9px] tracking-widest uppercase text-zinc-400/50 hover:text-zinc-600 transition-colors font-ultra-light">
+            Privacy Policy
+          </a>
         </div>
 
       </div>

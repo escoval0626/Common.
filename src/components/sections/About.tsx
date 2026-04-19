@@ -81,14 +81,14 @@ export default function About() {
           className="w-full md:w-1/2 flex justify-end items-start md:sticky md:top-32"
         >
           <div className="relative w-full max-w-md bg-zinc-100 aspect-[3/4] overflow-hidden shadow-2xl">
-             <Image 
-               src="/images/about/main.png" 
-               alt="Vase with dandelion seeds" 
-               width={800}
-               height={1067}
-               className="w-full h-full object-cover scale-110"
-               priority // Aboutセクションの上部画像なので優先読み込み
-             />
+              <Image 
+                src="/images/about/main.png" 
+                alt="Common. Studio Philosophy Visual - 日常に潜む普遍的な美しさを抽出するデザインの視点" 
+                width={800}
+                height={1067}
+                className="w-full h-full object-cover scale-125"
+                priority // Aboutセクションの上部画像なので優先読み込み
+              />
           </div>
         </motion.div>
 

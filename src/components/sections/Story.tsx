@@ -22,7 +22,7 @@ export default function Story() {
 
         {/* Main Philosophy Text */}
         <div className="space-y-12 md:space-y-20">
-          <motion.h2 
+          <motion.h3 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -30,7 +30,7 @@ export default function Story() {
             className="text-2xl md:text-5xl font-light leading-relaxed text-primary tracking-tighter-extra text-center font-japanese"
           >
             デザインの背後にある、<br className="md:hidden" />静かな意志。
-          </motion.h2>
+          </motion.h3>
 
           <motion.div 
             initial={{ opacity: 0 }}

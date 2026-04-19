@@ -20,11 +20,12 @@ export default function Hero() {
   }
 
   return (
-    <section id="hero" className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-[#e0e0e0]">
+    <section id="hero" className="relative h-[100dvh] w-full flex flex-col items-center justify-center overflow-hidden bg-[#e0e0e0] touch-pan-y">
       {/* Background Layer 1: The Video (will-changeでGPU加速を提示) */}
-      <div className="absolute inset-0 z-0" style={{ opacity: 0.6, willChange: 'transform' }}>
+      <div className="absolute inset-0 z-0 pointer-events-none select-none" style={{ opacity: 0.6, willChange: 'transform' }}>
         <video
           src="/videos/hero_bg.mp4"
+          poster="/images/hero_poster.png"
           autoPlay
           muted
           loop

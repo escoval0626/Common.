@@ -38,7 +38,7 @@ export default function Separate() {
             <div key={i} className="relative h-[80%] aspect-[16/9] flex-shrink-0">
               <Image 
                 src={src} 
-                alt={`Detail ${i}`}
+                alt={`Common. Studio - Design Process Detail ${i + 1} | クリエイティブスタジオの制作プロセスとディテール`}
                 width={400}
                 height={225}
                 className="w-full h-full object-cover shadow-sm" 

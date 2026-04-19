@@ -7,7 +7,16 @@ export default function Services() {
   const services = [
     {
       title: "Web Production",
-      desc: "明瞭さと流れを重んじた、\n没入感のあるデジタル体験を。",
+      desc: (
+        <>
+          <span className="inline-block whitespace-nowrap">明瞭さと</span>
+          <span className="inline-block whitespace-nowrap">流れを</span>
+          <span className="inline-block whitespace-nowrap">重んじた、</span>
+          <br className="md:hidden" />
+          <span className="inline-block whitespace-nowrap">没入感のある</span>
+          <span className="inline-block whitespace-nowrap">デジタル体験を。</span>
+        </>
+      ),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-secondary">
           <circle cx="12" cy="12" r="8" />
@@ -17,7 +26,16 @@ export default function Services() {
     },
     {
       title: "LP Production",
-      desc: "ミニマルな美学に基づいた、\n確度の高いストーリーを。",
+      desc: (
+        <>
+          <span className="inline-block whitespace-nowrap">ミニマルな</span>
+          <span className="inline-block whitespace-nowrap">美学に</span>
+          <span className="inline-block whitespace-nowrap">基づいた、</span>
+          <br className="md:hidden" />
+          <span className="inline-block whitespace-nowrap">確度の高い</span>
+          <span className="inline-block whitespace-nowrap">ストーリーを。</span>
+        </>
+      ),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-secondary">
           <path d="M4 20L20 4M4 4l16 16" />
@@ -26,7 +44,16 @@ export default function Services() {
     },
     {
       title: "Logo Design",
-      desc: "本質を抽出し、普遍的で力強い\n視覚的アイデンティティを構築します。",
+      desc: (
+        <>
+          <span className="inline-block whitespace-nowrap">本質を抽出し、</span>
+          <span className="inline-block whitespace-nowrap">普遍的で</span>
+          <span className="inline-block whitespace-nowrap">力強い</span>
+          <br className="md:hidden" />
+          <span className="inline-block whitespace-nowrap">視覚的アイデンティティを</span>
+          <span className="inline-block whitespace-nowrap">構築します。</span>
+        </>
+      ),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-secondary">
           <circle cx="12" cy="12" r="4" />
@@ -36,7 +63,17 @@ export default function Services() {
     },
     {
       title: "Photography",
-      desc: "光と影を操り、\n静寂の中に潜む空気感を切り取ります。",
+      desc: (
+        <>
+          <span className="inline-block whitespace-nowrap">光と影を</span>
+          <span className="inline-block whitespace-nowrap">操り、</span>
+          <br className="md:hidden" />
+          <span className="inline-block whitespace-nowrap">静寂の中に</span>
+          <span className="inline-block whitespace-nowrap">潜む</span>
+          <span className="inline-block whitespace-nowrap">空気感を</span>
+          <span className="inline-block whitespace-nowrap">切り取ります。</span>
+        </>
+      ),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-secondary">
           <rect x="3" y="6" width="18" height="13" rx="1" />
@@ -46,7 +83,19 @@ export default function Services() {
     },
     {
       title: "Copywriting",
-      desc: "言葉に魂を込め、ブランドの深層にある\n想いを響かせるストーリーを紡ぎます。",
+      desc: (
+        <>
+          <span className="inline-block whitespace-nowrap">言葉に</span>
+          <span className="inline-block whitespace-nowrap">魂を込め、</span>
+          <span className="inline-block whitespace-nowrap">ブランドの</span>
+          <span className="inline-block whitespace-nowrap">深層にある</span>
+          <br className="md:hidden" />
+          <span className="inline-block whitespace-nowrap">想いを</span>
+          <span className="inline-block whitespace-nowrap">響かせる</span>
+          <span className="inline-block whitespace-nowrap">ストーリーを</span>
+          <span className="inline-block whitespace-nowrap">紡ぎます。</span>
+        </>
+      ),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-secondary">
           <path d="M16 3L5 14l-1 5 5-1L20 7l-4-4z" />
@@ -56,7 +105,18 @@ export default function Services() {
     },
     {
       title: "Video Production",
-      desc: "動きと音を操り、一瞬で心を掴む\nシネマティックな物語を創造します。",
+      desc: (
+        <>
+          <span className="inline-block whitespace-nowrap">動きと音を</span>
+          <span className="inline-block whitespace-nowrap">操り、</span>
+          <span className="inline-block whitespace-nowrap">一瞬で</span>
+          <span className="inline-block whitespace-nowrap">心を掴む</span>
+          <br className="md:hidden" />
+          <span className="inline-block whitespace-nowrap">シネマティックな</span>
+          <span className="inline-block whitespace-nowrap">物語を</span>
+          <span className="inline-block whitespace-nowrap">創造します。</span>
+        </>
+      ),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-secondary">
           <circle cx="12" cy="12" r="10" />
@@ -66,7 +126,17 @@ export default function Services() {
     },
     {
       title: "SNS Key Visual",
-      desc: "情報の波の中で一際目を惹く、\nブランドの個性を凝縮した視覚体験を。",
+      desc: (
+        <>
+          <span className="inline-block whitespace-nowrap">情報の波の中で</span>
+          <span className="inline-block whitespace-nowrap">一際目を惹く、</span>
+          <br className="md:hidden" />
+          <span className="inline-block whitespace-nowrap">ブランドの</span>
+          <span className="inline-block whitespace-nowrap">個性を</span>
+          <span className="inline-block whitespace-nowrap">凝縮した</span>
+          <span className="inline-block whitespace-nowrap">視覚体験を。</span>
+        </>
+      ),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-secondary">
           <rect x="2" y="2" width="20" height="20" rx="2" />
@@ -76,7 +146,18 @@ export default function Services() {
     },
     {
       title: "Visual Consulting",
-      desc: "多角的な視点から美学を見つめ直し、\n一貫性のある表現の羅針盤となります。",
+      desc: (
+        <>
+          <span className="inline-block whitespace-nowrap">多角的な</span>
+          <span className="inline-block whitespace-nowrap">視点から</span>
+          <span className="inline-block whitespace-nowrap">美学を</span>
+          <span className="inline-block whitespace-nowrap">見つめ直し、</span>
+          <br className="md:hidden" />
+          <span className="inline-block whitespace-nowrap">一貫性の</span>
+          <span className="inline-block whitespace-nowrap">ある表現の</span>
+          <span className="inline-block whitespace-nowrap">羅針盤となります。</span>
+        </>
+      ),
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-secondary">
           <path d="M12 2L2 12l10 10 10-10L12 2z" />
@@ -139,7 +220,7 @@ export default function Services() {
                   {s.title}
                 </h3>
               </div>
-              <p className="text-[13px] font-light leading-relaxed text-secondary tracking-widest max-w-[280px] font-japanese whitespace-pre-line">
+              <p className="text-[13px] font-light leading-relaxed text-secondary tracking-widest max-w-[280px] font-japanese whitespace-normal">
                 {s.desc}
               </p>
             </motion.div>
@@ -157,7 +238,8 @@ export default function Services() {
           <div className="w-px h-24 bg-outline-variant/30" />
           <div className="text-center space-y-8 px-6">
             <h4 className="text-xl md:text-2xl font-light text-primary tracking-widest font-japanese">
-              あなたの価値を、本質的な形へ。
+              <span className="inline-block">あなたの価値を、</span>
+              <span className="inline-block">本質的な形へ。</span>
             </h4>
             <a 
               href="#お問い合わせ" 
@@ -169,8 +251,7 @@ export default function Services() {
               <div className="w-16 h-[1px] bg-primary group-hover:w-24 transition-all duration-700" />
             </a>
           </div>
-        </motion.div>
-      </div>
+        </motion.div>      </div>
     </section>
   )
 }

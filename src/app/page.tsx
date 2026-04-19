@@ -8,6 +8,7 @@ import Poetry from '@/components/sections/Poetry'
 import Works from '@/components/sections/Works'
 import Contact from '@/components/sections/Contact'
 import Footer from '@/components/layout/Footer'
+import PrivacyPolicy from '@/components/sections/PrivacyPolicy'
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <PrivacyPolicy />
     </div>
   )
 }
